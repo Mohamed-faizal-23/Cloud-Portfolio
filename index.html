@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Faizal S — Cloud Engineer</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Devicon full-color icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+  <!-- main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Mohamed Faizal - Cloud Engineer (AWS) portfolio. Projects: S3 static hosting, VPC/EC2, CI/CD on AWS, Frontend internship. AWS re/Start Graduate and AWS Certified Cloud Practitioner." />
+</head>
+<body>
+
+  <!-- header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home">MFS.Cloud</a>
+      </div>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#internship">Internship</a>
+        <a href="#certs">Certifications</a>
+        <a href="#vision">Career Vision</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="darkToggle" class="dark-toggle" aria-label="toggle dark">🌙</button>
+      <!-- aria-expanded updated by JS -->
+      <button class="mobile-menu" id="mobileMenu" aria-label="menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section id="home" class="hero-dev container">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="kicker">Hi, I am</div>
+          <h1 class="hero-name">Mohamed Faizal S</h1>
+          <div class="hero-role">I am a <span class="role-highlight">Cloud Engineer (AWS)</span></div>
+          <p class="hero-desc">
+            Passionate about designing secure, scalable, cost-effective cloud solutions using AWS — S3 static hosting, CloudFront CDN, VPC &amp; EC2, and infrastructure automation.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn-cta" href="resume.pdf" download>📄 Check Resume</a>
+            <a class="btn-cta btn-outline" href="#projects">Explore Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-ring">
+            <!-- replace Photograph.png with your photo -->
+            <img src="Photograph.png" alt="Mohamed Faizal" class="profile-large" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-layout">
+        <div class="about-text">
+          <p>
+            I'm an aspiring AWS Cloud Engineer passionate about building secure, scalable and reliable cloud solutions.
+            My journey started during my Computer Science degree, and I strengthened my cloud fundamentals through the AWS re/Start program.
+          </p>
+          <p>
+            I enjoy working with VPC architectures, EC2 deployments, S3 hosting, and CI/CD automation to create efficient cloud environments.
+            I believe in continuous learning, hands-on practice, and delivering solutions that follow best practices.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="about-pill">
+            🎓 B.E. Computer Science &amp; Engineering
+          </div>
+          <div class="about-pill">
+            ☁️ AWS re/Start Graduate &amp; AWS CCP
+          </div>
+          <div class="about-pill">
+            💻 Cloud &amp; Frontend project experience
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <p class="projects-subtitle">
+        I have worked on cloud and frontend projects. Here are some of my highlighted works.
+      </p>
+
+      <!-- Filter buttons -->
+      <div class="projects-filter">
+        <button class="project-filter-btn active" data-filter="all">All</button>
+        <button class="project-filter-btn" data-filter="cloud">Cloud</button>
+        <button class="project-filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+
+      <div class="projects-grid devfolio-projects">
+        <!-- Project 1 -->
+        <article class="project-item" data-category="cloud" data-project-id="p1">
+          <div class="project-thumbnail project-thumb-1"></div>
+          <div class="project-tags">
+            <span>AWS</span><span>S3</span><span>CloudFront</span>
+          </div>
+          <h3 class="project-title">Static Website Hosting on AWS</h3>
+          <p class="project-year">2025</p>
+          <p class="project-short">
+            Portfolio website hosted on Amazon S3 with CloudFront for global, secure delivery.
+          </p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-item" data-category="cloud" data-project-id="p2">
+          <div class="project-thumbnail project-thumb-2"></div>
+          <div class="project-tags">
+            <span>AWS</span><span>VPC</span><span>EC2</span>
+          </div>
+          <h3 class="project-title">AWS Secure VPC Architecture</h3>
+          <p class="project-year">2025</p>
+          <p class="project-short">
+            Secure VPC with public and private subnets, routing, and EC2 web server.
+          </p>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-item" data-category="cloud" data-project-id="p3">
+          <div class="project-thumbnail project-thumb-3"></div>
+          <div class="project-tags">
+            <span>AWS</span><span>CodePipeline</span><span>CI/CD</span>
+          </div>
+          <h3 class="project-title">Enhancing Cloud Deployment on AWS</h3>
+          <p class="project-year">2025</p>
+          <p class="project-short">
+            CI/CD pipeline using CodePipeline and CodeBuild for automated deployments.
+          </p>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-item" data-category="frontend" data-project-id="p4">
+          <div class="project-thumbnail project-thumb-4"></div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3 class="project-title">Frontend Internship Project</h3>
+          <p class="project-year">2024</p>
+          <p class="project-short">
+            Interactive web application with responsive UI and improved user experience.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <p class="skills-subtitle">
+        Here are some of my core skills in cloud, DevOps, programming, and tools.
+      </p>
+
+      <div class="skills-wrapper">
+        <!-- Cloud & DevOps card -->
+        <div class="skills-card">
+          <h3 class="skills-card-title">Cloud &amp; DevOps</h3>
+          <div class="skills-pill-row">
+            <span class="skill-pill">
+              <i class="devicon-amazonwebservices-original colored skill-icon"></i>
+              AWS (EC2, S3)
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-amazonwebservices-original colored skill-icon"></i>
+              VPC &amp; IAM
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-amazonwebservices-original colored skill-icon"></i>
+              CloudFront &amp; Route 53
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-terraform-plain colored skill-icon"></i>
+              Terraform
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-docker-plain colored skill-icon"></i>
+              Docker
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-git-plain colored skill-icon"></i>
+              Git
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-github-original colored skill-icon"></i>
+              GitHub
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-linux-plain colored skill-icon"></i>
+              Linux Server Management
+            </span>
+          </div>
+        </div>
+
+        <!-- Programming & Tools card -->
+        <div class="skills-card">
+          <h3 class="skills-card-title">Programming &amp; Tools</h3>
+          <div class="skills-pill-row">
+            <span class="skill-pill">
+              <i class="devicon-python-plain colored skill-icon"></i>
+              Python
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-java-plain colored skill-icon"></i>
+              Core Java
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-html5-plain colored skill-icon"></i>
+              HTML
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-css3-plain colored skill-icon"></i>
+              CSS
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-javascript-plain colored skill-icon"></i>
+              JavaScript (Basics)
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-linux-plain colored skill-icon"></i>
+              Linux CLI
+            </span>
+            <span class="skill-pill">
+              <i class="devicon-vscode-plain colored skill-icon"></i>
+              VS Code
+            </span>
+            <span class="skill-pill">
+              PuTTY &amp; WinSCP
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- education -->
+    <section id="education" class="section container">
+      <h2 class="section-title">🎓 Education</h2>
+      <div class="card">
+        <p><strong>B.E. — Computer Science &amp; Engineering</strong></p>
+        <p>E.G.S. Pillay Engineering College (2020–2024). CGPA: 8.31</p>
+      </div>
+    </section>
+
+    <!-- internship -->
+    <section id="internship" class="section container">
+      <h2 class="section-title">💼 Internship</h2>
+      <div class="card">
+        <p><strong>Full Stack Developer Intern</strong> — 8 Queens Software Technology, Chennai (Jun 2024 – Sep 2024)</p>
+        <ul>
+          <li>Contributed to the front-end development of a movie-details web application using HTML, CSS and JavaScript.</li>
+          <li>Integrated UI with backend APIs and helped debug layout and functionality issues.</li>
+          <li>Worked in Agile sprints, collaborating with the team to deliver features on time.</li>
+          <li>Used Git and GitHub for version control and maintaining a clean project history.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- certifications -->
+    <section id="certs" class="section container">
+      <h2 class="section-title">🎖 Certifications</h2>
+      <p class="certs-intro">Key AWS certifications and training that strengthen my cloud foundation.</p>
+
+      <div class="certs-grid">
+        <!-- AWS re/Start -->
+        <article class="cert-card">
+          <img src="aws-restart-badge.png" alt="AWS re/Start Graduate badge" class="cert-badge" loading="lazy">
+          <h3>AWS re/Start Graduate</h3>
+          <p>Full-time cloud training program covering Linux, AWS core services, networking, security, and hands-on labs.</p>
+          <a href="https://www.credly.com/badges/4676c57b-8176-4d1f-a8a1-cafed6be5546/public_url" target="_blank" class="cert-link">View badge</a>
+        </article>
+
+        <!-- AWS Certified Cloud Practitioner -->
+        <article class="cert-card">
+          <img src="aws-cloud-practitioner-badge.png" alt="AWS Certified Cloud Practitioner badge" class="cert-badge" loading="lazy">
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p>Validated knowledge of AWS Cloud concepts, security, billing, architecture, and global infrastructure.</p>
+          <a href="https://www.credly.com/badges/d86a83db-c8be-4dfe-ab22-f14f3c43fb74/public_url" target="_blank" class="cert-link">View badge</a>
+        </article>
+
+        <!-- AWS Academy Cloud Foundations -->
+        <article class="cert-card">
+          <img src="aws-academy-cloud-foundations-badge.png" alt="AWS Academy Cloud Foundations badge" class="cert-badge" loading="lazy">
+          <h3>AWS Academy Cloud Foundations</h3>
+          <p>AWS Academy course (Feb 2024) focused on fundamental AWS services, cloud concepts, and best practices.</p>
+          <a href="https://www.credly.com/badges/d0383a23-dea3-4314-80a6-afb711978144/public_url" target="_blank" class="cert-link">View badge</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAREER VISION -->
+    <section id="vision" class="section container">
+      <h2 class="section-title">Career Vision</h2>
+      <p class="vision-intro">
+        My goal is to grow into a strong Cloud / DevOps Engineer who can design secure, scalable and automated infrastructure on AWS.
+        I want to keep learning, contribute to real-world projects, and follow best practices in cloud architecture.
+      </p>
+
+      <div class="vision-grid">
+        <div class="vision-card">
+          <h3>Short Term (1–2 Years)</h3>
+          <p>Start as a Cloud / DevOps Engineer trainee and work on AWS projects using EC2, S3, VPC, IAM and CI/CD pipelines.</p>
+        </div>
+        <div class="vision-card">
+          <h3>Mid Term (3–5 Years)</h3>
+          <p>Gain experience in automation with Terraform, containers and monitoring, and help design production-ready cloud architectures.</p>
+        </div>
+        <div class="vision-card">
+          <h3>Continuous Learning</h3>
+          <p>Keep upgrading skills with AWS certifications, hands-on labs and real projects to stay aligned with industry best practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-subtitle">
+          Feel free to reach out to me for any questions, opportunities, or collaborations.
+        </p>
+
+        <div class="contact-layout">
+          <!-- Email form card -->
+          <form class="contact-card" id="contactForm" method="POST" action="https://formspree.io/f/xyzrzank">
+            <h3 class="contact-card-title">Email Me 🚀</h3>
+
+            <div class="contact-field">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="contact-field">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="contact-field">
+              <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <div class="contact-field">
+              <textarea name="message" rows="4" placeholder="Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta contact-submit">Send</button>
+
+            <!-- small status text -->
+            <p class="contact-status" id="contactStatus"></p>
+          </form>
+
+          <!-- Contact info / socials -->
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Let’s Connect</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon">
+                  <img src="assets/mail.png" alt="Email icon">
+                </span>
+                <a href="mailto:faizalmf2003@gmail.com">faizalmf2003@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-icon">
+                  <img src="assets/phone.png" alt="Phone icon">
+                </span>
+                <a href="tel:+919585303521">+91 9585303521</a>
+              </li>
+              <li>
+                <span class="contact-icon">
+                  <img src="assets/location.png" alt="Location icon">
+                </span>
+                Chennai, India
+              </li>
+            </ul>
+
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/mohamed-faizal-s-674743220"
+                 target="_blank" aria-label="LinkedIn" class="contact-social-pill">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+              </a>
+              <a href="https://github.com/Mohamed-faizal-23"
+                 target="_blank" aria-label="GitHub" class="contact-social-pill">
+                <img src="assets/github.png" alt="GitHub">
+              </a>
+              <a href="https://wa.me/919585303521"
+                 target="_blank" aria-label="WhatsApp" class="contact-social-pill">
+                <img src="assets/whatsapp.png" alt="WhatsApp">
+              </a>
+              <a href="https://www.instagram.com/mohamed_faizal_23/"
+                 target="_blank" aria-label="Instagram" class="contact-social-pill">
+                <!-- TODO: replace # with your Instagram link -->
+                <img src="assets/instagram.png" alt="Instagram">
+              </a>
+              <a href="mailto:faizalmf2003@gmail.com"
+                 aria-label="Mail" class="contact-social-pill">
+                <img src="assets/mail.png" alt="Email">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project details modal -->
+    <div class="project-modal-backdrop" id="projectModal">
+      <div class="project-modal">
+        <button class="project-modal-close" id="projectModalClose" aria-label="Close project details">✕</button>
+        <p class="project-modal-badge" id="modalBadge">Cloud Project</p>
+        <h3 class="project-modal-title" id="modalTitle">Project Title</h3>
+        <p class="project-modal-year" id="modalYear">2025</p>
+        <p class="project-modal-tags" id="modalTags"></p>
+        <p class="project-modal-desc" id="modalDesc">
+          Detailed description about the project will appear here.
+        </p>
+        <div class="project-modal-actions">
+          <a href="#" target="_blank" class="btn-cta modal-btn" id="modalCodeBtn">View Code / Report</a>
+          <a href="#" target="_blank" class="btn-cta modal-btn secondary" id="modalLiveBtn">View Live App</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-name">Mohamed Faizal S</div>
+
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certifications</a>
+        <a href="#vision">Career Vision</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social-row">
+        <a href="tel:+919585303521" aria-label="Phone" class="footer-icon-pill">
+          <img src="assets/phone.png" alt="Phone">
+        </a>
+        <a href="mailto:faizalmf2003@gmail.com" aria-label="Email" class="footer-icon-pill">
+          <img src="assets/mail.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-faizal-s-674743220"
+           target="_blank" aria-label="LinkedIn" class="footer-icon-pill">
+          <img src="assets/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Mohamed-faizal-23"
+           target="_blank" aria-label="GitHub" class="footer-icon-pill">
+          <img src="assets/github.png" alt="GitHub">
+        </a>
+        <a href="https://wa.me/919585303521"
+           target="_blank" aria-label="WhatsApp" class="footer-icon-pill">
+          <img src="assets/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/mohamed_faizal_23/"
+           target="_blank" aria-label="Instagram" class="footer-icon-pill">
+          <!-- TODO: replace # with your Instagram link -->
+          <img src="assets/instagram.png" alt="Instagram">
+        </a>
+      </div>
+
+      <p class="footer-tagline">Elevating the Cloud Experience.</p>
+      <p class="footer-copy">© 2025 Mohamed Faizal S — Cloud Engineer (AWS)</p>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
